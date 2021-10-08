@@ -9,3 +9,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #ededf6;
+    font-family: Helvetica, Arial, sans-serif;
+}
