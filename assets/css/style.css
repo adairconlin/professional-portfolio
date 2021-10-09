@@ -87,15 +87,9 @@ header nav ul li a {
 }
 
 /* BODY CONTENT STYLES */
-article p {
-    color: var(--tertiary-color);
-    font-size: 20px;
-    line-height: 1.5;
-}
-
 article {
     width: 90%;
-    margin: 70px 0;
+    margin: 50px 0;
     display: flex;
     flex: wrap;
     justify-content: space-between;
@@ -109,8 +103,32 @@ article h2 {
     padding-right: 20px;
 }
 
+article p {
+    color: var(--tertiary-color);
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
 article .right-section {
     flex: 2 70%;
     border-left: 4px solid var(--tertiary-color);
     padding-left: 50px;
+}
+
+/* CONTACT SECTION STYLES */
+article .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+article .links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--tertiary-color);
 }
