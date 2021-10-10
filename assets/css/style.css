@@ -59,10 +59,9 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px 3px 15px;
-    font-size: 1.4vw;
+    font-size: 28px;
     border-bottom: 5px solid var(--secondary-color);
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 10px;
 }
 
 /* HERO STYLES */
@@ -97,7 +96,7 @@ article {
 
 article h2 {
     color: var(--tertiary-color);
-    font-size: 3.3vw;
+    font-size: 3vw;
     text-align: right;
     flex: 1 20%;
     padding-right: 20px;
@@ -116,6 +115,64 @@ article .right-section {
     padding-left: 50px;
 }
 
+/* WORK SECTION STYLES */
+/*flex column for overlaying div alignment*/
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 15px 0px;
+    flex: 1 1 0px;
+    border: 8px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/*flex row for side-by-side projects*/
+.project-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.5s;
+    margin: 0;
+}
+
+.main img {
+    height: 700px;
+    /*fixes anchor tag overflow*/
+    display: block;
+}
+
+.project img:hover {
+    opacity: 1;
+}
+
+.project div {
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding: 1em 1em 1em 3em;
+    z-index: 999;
+}
+
+.project h4 {
+    color: var(--primary-color);
+    font-size: 1.8vw;
+    margin-bottom: 8px;
+}
+
+.project h6 {
+    color: var(--tertiary-color);
+    font-size: 1vw;
+}
+
 /* CONTACT SECTION STYLES */
 article .links {
     display: flex;
@@ -131,58 +188,4 @@ article .links a {
     font-size: 24px;
     padding: 6px 6px;
     border-bottom: 5px solid var(--tertiary-color);
-}
-
-/* WORK SECTION STYLES */
-.project {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 15px 15px 0px;
-    flex: 1 1 0px;
-    border: 8px solid var(--secondary-color);
-    background-color: var(--primary-color);
-}
-
-.project-row {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-
-.project img {
-    width: 100%;
-    height: 225px;
-    object-fit: cover;
-    opacity: 0.6;
-    transition: 0.3s;
-    margin: 0;
-}
-
-.main img {
-    height: 100%;
-}
-
-.project img:hover {
-    opacity: 1;
-}
-
-.project div {
-    background-color: var(--secondary-color);
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 35px;
-    padding: 15px 15px 15px 40px;
-    z-index: 999;
-}
-
-.project h4 {
-    color: var(--primary-color);
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-
-.project h6 {
-    color: var(--tertiary-color);
-    font-size: 16px;
 }
