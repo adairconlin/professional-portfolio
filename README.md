@@ -9,4 +9,4 @@ In this project, I used flexbox and several pseudo class slectors in order to em
 
 ### You can view my project's end result [here](https://adairconlin.art/professional-portfolio/)
 
-![Professional-Portfolio](assets/images/website-preview.PNG)
+![Professional-Portfolio](assets/images/runbuddy-preview.PNG)
